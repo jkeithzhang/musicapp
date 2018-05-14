@@ -4,12 +4,12 @@ import './default.css';
 class Footer extends Component {
 	render() {
 		return (
-			<div id="copyright" class="container">
+			<div id="copyright" className="container">
 				<p>&copy; All rights reserved.</p>
-				<ul class="contact">
+				<ul className="contact">
 					<li>
 						<a href="https://github.com/zhangkecyrus/musicapp" target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-github footer-icon"></i>
+							<i className="fab fa-github footer-icon"></i>
 						</a>
 					</li>
 				</ul>

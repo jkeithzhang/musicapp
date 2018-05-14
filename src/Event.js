@@ -139,7 +139,7 @@ class Event extends React.Component {
 						this.state.data.map(contact => {
 							return <div key={contact["ON SALE"]} style={{ height: 40 }} className="row myRow">
 								<div className="tableItem col-md-4 col-sm-4"><a href="#imageModal1" className="portfolio-link" data-toggle="modal" data-target="#exampleModal" onClick={() => this.fetchArtist(contact.ARTIST)}><i className="far fa-user"></i> {contact.ARTIST}</a></div>
-								<div className="tableItem col-md-2 col-sm-2"><span onClick={() => this.playTrack()}><i className="fas fa-play" ></i> play track</span></div>
+								<div className="tableItem col-md-2 col-sm-2"><span className="play-track" onClick={() => this.playTrack()}><i className="fas fa-play" ></i> play track</span></div>
 								<div className="tableItem col-md-2 col-sm-2 hidden-xs"><i className="far fa-calendar-alt"></i> {contact.DATE}</div>
 								<div className="tableItem col-md-1 col-sm-1 hidden-xs"><i className="far fa-clock"></i> {contact.TIME}</div>
 								<div className="tableItem col-md-2 col-sm-2 hidden-xs"><i className="fas fa-thumbtack"></i> {contact.VENUE}</div>

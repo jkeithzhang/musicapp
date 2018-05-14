@@ -231,3 +231,12 @@ a:hover
 {
 	background-color: white;
 }
+.play-track
+{
+	color: #ff8a0e;
+}
+
+.play-track:hover
+{
+	color: rgb(76, 85, 211);
+}
