@@ -1,0 +1,242 @@
+[  
+   {  
+      "ON SALE":"BELL WITCH 11/2/2017 21:30 Ritz $15.00",
+      "ARTIST":"BELL WITCH",
+      "DATE":"11/2/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$15.00"
+   },
+   {  
+      "ON SALE":"LEE RENALDO 11/2/2017 21:00 Sala Rossa $17.00",
+      "ARTIST":"LEE RENALDO",
+      "DATE":"11/2/2017",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$17.00"
+   },
+   {  
+      "ON SALE":"YOKO O / NYMRA & SOFISTICATED 11/4/2017 2:00 Stereo $25.00",
+      "ARTIST":"YOKO O / NYMRA & SOFISTICATED",
+      "DATE":"11/4/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$25.00"
+   },
+   {  
+      "ON SALE":"JOSEPH CAPRIATI 11/5/2017 2:00 Stereo $40.00",
+      "ARTIST":"JOSEPH CAPRIATI",
+      "DATE":"11/5/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$40.00"
+   },
+   {  
+      "ON SALE":"BOY HARSHER 11/5/2017 21:30 Ritz $11.00",
+      "ARTIST":"BOY HARSHER",
+      "DATE":"11/5/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$11.00"
+   },
+   {  
+      "ON SALE":"LA WITCH 11/7/2017 21:30 Ritz $12.00",
+      "ARTIST":"LA WITCH",
+      "DATE":"11/7/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$12.00"
+   },
+   {  
+      "ON SALE":"ALL THEM WITCHES 11/10/2017 20:00 Fairmount $21.50",
+      "ARTIST":"ALL THEM WITCHES",
+      "DATE":"11/10/2017",
+      "TIME":"20:00",
+      "VENUE":"Fairmount",
+      "PRICE":"$21.50"
+   },
+   {  
+      "ON SALE":"COLLEEN 11/10/2017 21:00 Sala Rossa $17.00",
+      "ARTIST":"COLLEEN",
+      "DATE":"11/10/2017",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$17.00"
+   },
+   {  
+      "ON SALE":"SADIES 11/11/2017 21:00 Sala Rossa $20.00",
+      "ARTIST":"SADIES",
+      "DATE":"11/11/2017",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$20.00"
+   },
+   {  
+      "ON SALE":"NICK WARREN / SIMPLE CITY 11/11/2017 2:00 Stereo $25.00",
+      "ARTIST":"NICK WARREN / SIMPLE CITY",
+      "DATE":"11/11/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$25.00"
+   },
+   {  
+      "ON SALE":"CIRCUIT DES YEUX 11/12/2017 21:30 Ritz $13.00",
+      "ARTIST":"CIRCUIT DES YEUX",
+      "DATE":"11/12/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$13.00"
+   },
+   {  
+      "ON SALE":"DANNY TENAGLIA 11/12/2017 2:00 Stereo $40.00",
+      "ARTIST":"DANNY TENAGLIA",
+      "DATE":"11/12/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$40.00"
+   },
+   {  
+      "ON SALE":"ALVVAYS 11/17/2017 21:00 Club Soda $20.50",
+      "ARTIST":"ALVVAYS",
+      "DATE":"11/17/2017",
+      "TIME":"21:00",
+      "VENUE":"Club Soda",
+      "PRICE":"$20.50"
+   },
+   {  
+      "ON SALE":"PAN-POT / TONE DEPTH 11/18/2017 2:00 Stereo $35.00",
+      "ARTIST":"PAN-POT / TONE DEPTH",
+      "DATE":"11/18/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$35.00"
+   },
+   {  
+      "ON SALE":"LA VIE EN STEREO: DAVID MORALES 11/19/2017 2:00 Stereo $35.00",
+      "ARTIST":"LA VIE EN STEREO: DAVID MORALES",
+      "DATE":"11/19/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$35.00"
+   },
+   {  
+      "ON SALE":"SUUNS & JERUSALEM IN MY HEART 11/23/2017 21:00 Sala Rossa $20.00",
+      "ARTIST":"SUUNS & JERUSALEM IN MY HEART",
+      "DATE":"11/23/2017",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$20.00"
+   },
+   {  
+      "ON SALE":"MESSE DES MORT Psaume 1 11/24/2017 TBA $45.00",
+      "ARTIST":"MESSE DES MORT Psaume 1",
+      "DATE":"11/24/2017",
+      "TIME":"TBA",
+      "VENUE":"TBA",
+      "PRICE":"$45.00"
+   },
+   {  
+      "ON SALE":"DETROIT LOVE:CARL CRAIG / KEVIN SAUNDERSON 11/25/2017 2:00 Stereo $30.00",
+      "ARTIST":"DETROIT LOVE:CARL CRAIG / KEVIN SAUNDERSON",
+      "DATE":"11/25/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$30.00"
+   },
+   {  
+      "ON SALE":"MESSE DES MORT Psaume 2 11/25/2017 TBA $45.00",
+      "ARTIST":"MESSE DES MORT Psaume 2",
+      "DATE":"11/25/2017",
+      "TIME":"TBA",
+      "VENUE":"TBA",
+      "PRICE":"$45.00"
+   },
+   {  
+      "ON SALE":"NORTH OF AMERICA 11/25/2017 21:00 Ritz $20.00",
+      "ARTIST":"NORTH OF AMERICA",
+      "DATE":"11/25/2017",
+      "TIME":"21:00",
+      "VENUE":"Ritz",
+      "PRICE":"$20.00"
+   },
+   {  
+      "ON SALE":"DJ VIBE / JIMMY BE 11/26/2017 2:00 Stereo $30.00",
+      "ARTIST":"DJ VIBE / JIMMY BE",
+      "DATE":"11/26/2017",
+      "TIME":"2:00",
+      "VENUE":"Stereo",
+      "PRICE":"$30.00"
+   },
+   {  
+      "ON SALE":"TED LEO AND THE PHARMACISTS 12/5/2017 21:00 Sala Rossa $20.00",
+      "ARTIST":"TED LEO AND THE PHARMACISTS",
+      "DATE":"12/5/2017",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$20.00"
+   },
+   {  
+      "ON SALE":"JESSICA MOSS 12/7/2017 21:30 Ritz $12.00",
+      "ARTIST":"JESSICA MOSS",
+      "DATE":"12/7/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$12.00"
+   },
+   {  
+      "ON SALE":"CHAD VANGAALEN 12/8/2017 21:00 Fairmount $15.00",
+      "ARTIST":"CHAD VANGAALEN",
+      "DATE":"12/8/2017",
+      "TIME":"21:00",
+      "VENUE":"Fairmount",
+      "PRICE":"$15.00"
+   },
+   {  
+      "ON SALE":"LEIF VOLLEBEKK 12/9/2017 21:00 National $25.00",
+      "ARTIST":"LEIF VOLLEBEKK",
+      "DATE":"12/9/2017",
+      "TIME":"21:00",
+      "VENUE":"National",
+      "PRICE":"$25.00"
+   },
+   {  
+      "ON SALE":"SHAMIR 12/10/2017 20:00 Belmont $15.00",
+      "ARTIST":"SHAMIR",
+      "DATE":"12/10/2017",
+      "TIME":"20:00",
+      "VENUE":"Belmont",
+      "PRICE":"$15.00"
+   },
+   {  
+      "ON SALE":"MATT POND PA 12/13/2017 21:30 Ritz $15.00",
+      "ARTIST":"MATT POND PA",
+      "DATE":"12/13/2017",
+      "TIME":"21:30",
+      "VENUE":"Ritz",
+      "PRICE":"$15.00"
+   },
+   {  
+      "ON SALE":"DANIELLE DE PICCIOTTO & ALEXANDRE HACKE 12/22/2017 21:00 Casa $13.00",
+      "ARTIST":"DANIELLE DE PICCIOTTO & ALEXANDRE HACKE",
+      "DATE":"12/22/2017",
+      "TIME":"21:00",
+      "VENUE":"Casa",
+      "PRICE":"$13.00"
+   },
+   {  
+      "ON SALE":"DESTROYER + MEGA BOG 1/23/2018 21:00 Fairmount $20.00",
+      "ARTIST":"DESTROYER + MEGA BOG",
+      "DATE":"1/23/2018",
+      "TIME":"21:00",
+      "VENUE":"Fairmount",
+      "PRICE":"$20.00"
+   },
+   {  
+      "ON SALE":"ROSTAM 2/5/2018 21:00 Sala Rossa $20.00",
+      "ARTIST":"ROSTAM",
+      "DATE":"2/5/2018",
+      "TIME":"21:00",
+      "VENUE":"Sala Rossa",
+      "PRICE":"$20.00"
+   }
+]

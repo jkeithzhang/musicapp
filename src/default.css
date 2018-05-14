@@ -1,0 +1,233 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #404040;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: #000000;
+}
+
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	color: #404040;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+	
+a
+{
+	color: #ff8a0e;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+/*********************************************************************************/
+/* Nav                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	padding: 5em 0em 3em 0em;
+	background: url(navbg.jpg) repeat-x center top;
+	/* border-bottom: 20px solid rgba(0,0,0,.5); */
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo h1
+{
+	display: inline-block;
+	margin-bottom: 0.20em;
+	padding: 0.20em 0.9em;
+	background: #000;
+	font-size: 3.5em;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+#logo span
+{
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	color: rgba(255,255,255,0.5);
+}
+
+#logo span a
+{
+	color: rgba(255,255,255,0.8);
+}
+
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu p
+{
+	display: inline-block;
+	padding: 0em 1em 0em 1em;
+	background: #ff8a0e;
+	text-align: center;
+	font-weight: bold;
+}
+
+#menu li
+{
+	display: inline-block;
+}
+
+#menu li a, #menu li span
+{
+	display: inline-block;
+	padding: 1.3em 1.5em;
+	text-decoration: none;
+	font-size: 0.90em;
+	font-weight: 600;
+	text-transform: uppercase;
+	outline: 0;
+	color: #FFF;
+}
+
+#menu .current_page_item
+{
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#page-wrapper
+{
+	overflow: hidden;
+	background: url(melody.png) repeat-x bottom;
+	filter: brightness(50%) contrast(70%);
+	padding: 2em 1em 0em 1em;
+	text-align: center;
+	min-height: 80px;
+}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+	text-align: center;
+}
+
+
+#footer .title span
+{
+	color: rgba(255,255,255,0.4);
+}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+	overflow: hidden;
+	padding: 5em 0em;
+	border-top: 1px solid rgba(255,255,255,0.08);
+	text-align: center;
+}
+
+#copyright p
+{
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: #F3F3F3;
+}
+
+#copyright a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+}
+
+/*********************************************************************************/
+/* Table related                                                               */
+/*********************************************************************************/
+
+.eventTh
+{
+	background-color: #ff8a0e;
+	padding: 1em 0 1em 0;
+	margin: 0;
+}
+
+.headerItem:hover
+{
+	cursor: pointer;
+	color: white;
+	transition: .5s;
+}
+.tableItem
+{
+	padding: 1em 0 1em 0;
+}
+.tableItem:hover
+{
+	cursor: pointer;
+	color: rgb(76, 85, 211);
+	transition: .2s;		
+}
+.myRow
+{
+	padding: 0 1em 0 1em;
+	margin: 0;
+}
+.footer-icon
+{
+	color: white;
+	font-size: 2em;
+}
+#list
+{
+	background-color: white;
+}
