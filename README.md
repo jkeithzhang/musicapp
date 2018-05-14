@@ -23,6 +23,7 @@ Make sure that you have the appropriate `"devDependencies"` and `"dependencies"`
 ### To start
 
 ```
+npm install
 npm start
 ```
 
