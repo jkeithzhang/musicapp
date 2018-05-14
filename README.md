@@ -6,6 +6,7 @@ Music app demo project built with Reactjs and some public APIs.
 2. [Setup](#setup)
 3. [Highlights](#highlights)
 4. [Demo](#demo)
+5. [Todo](#todo)
 
 ## [Directories](#directories)
     |-- public
@@ -36,3 +37,7 @@ npm start
 
 ## [Demo](#demo)
 <img src="musicdemo.gif" width="800" height="500" />
+
+## [Todo](#todo)
+- [ ] Display adjustment for various screensize
+- [ ] More functionalities
