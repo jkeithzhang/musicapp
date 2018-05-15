@@ -253,3 +253,8 @@ a:hover
 	color: rgb(76, 85, 211);
 	cursor: pointer;
 }
+
+.highlightRow
+{
+	background-color: #404040;
+}

@@ -30,11 +30,10 @@ class Event extends React.Component {
 				VENUE: 'asc',
 				DATE: 'asc',
 				TIME: 'asc',
-				VENUE: 'asc',
-				PRICE: 'asc'
 			},
 			artist: {},
-			trackId: 226//default
+			trackId: 226,//default
+			playing: ""
 		};
 		this.sortBy = this.sortBy.bind(this);
 		this.fetchMoreData = this.fetchMoreData.bind(this);
@@ -65,11 +64,12 @@ class Event extends React.Component {
 	}
 
 	//this funciton is the simulations of the FetchAPI job.
-	playTrack = () => {
+	playTrack = (key) => {
 		const ava = [291, 292, 293, 199, 667, 278, 256, 226, 590, 148, 427, 742, 19, 778];
 		let pickRandom = ava[Math.floor(Math.random() * 10)];
 		this.setState({
-			trackId: pickRandom
+			trackId: pickRandom,
+			playing: key
 		})
 	}
 	
@@ -171,7 +171,7 @@ class Event extends React.Component {
 						this.state.data.map(contact => {
 							return <div key={contact["ON SALE"]} style={{ height: 40 }} className="row myRow">
 								<div className="tableItem col-md-4 col-sm-4"><a href="#imageModal1" className="portfolio-link" data-toggle="modal" data-target="#exampleModal" onClick={() => this.fetchArtist(contact.ARTIST)}><i className="far fa-user"></i> {contact.ARTIST}</a></div>
-								<div className="tableItem col-md-2 col-sm-2"><span className="play-track" onClick={() => this.playTrack()}><i className="fas fa-play" ></i> play track</span></div>
+								<div className="tableItem col-md-2 col-sm-2"><span className="play-track" onClick={() => this.playTrack(contact["ON SALE"])}>{this.state.playing === contact["ON SALE"] ? (<i class="fas fa-music"></i>) : "play track"}</span></div>
 								<div className="tableItem col-md-2 col-sm-2 hidden-xs"><i className="far fa-calendar-alt"></i> {contact.DATE}</div>
 								<div className="tableItem col-md-1 col-sm-1 hidden-xs"><i className="far fa-clock"></i> {contact.TIME}</div>
 								<div className="tableItem col-md-2 col-sm-2 hidden-xs"><i className="fas fa-thumbtack"></i> {contact.VENUE}</div>
