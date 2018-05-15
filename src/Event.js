@@ -4,23 +4,14 @@ let data = require('./music-events.json');
 
 
 const num = 6;
-let arr = new Array(Math.ceil(data.length / num));
-let c = -1;
-for (let i = 0; i < data.length; i++) {
-	if (i % num === 0) {
-		c++;
-		arr[c] = [];
-	}
-	arr[c].push(data[i]);
-}
 class Event extends React.Component {
 	constructor(props) {
 		super(props);
 		this.index = 0;
-		this.size = arr.length;
-		this.all = arr;
+		this.size = num;
+		this.all = data;
 		this.state = {
-			data: arr[0].map(function (x) {
+			data: data.slice(0, 6).map(function (x) {
 				x['PRICE'] = x['PRICE'].replace('$', '');
 				return x;
 			}),
@@ -32,7 +23,7 @@ class Event extends React.Component {
 				TIME: 'asc',
 			},
 			artist: {},
-			trackId: 226,//default
+			trackId: 226,//default mock
 			playing: ""
 		};
 		this.sortBy = this.sortBy.bind(this);
@@ -56,7 +47,7 @@ class Event extends React.Component {
 	//this funciton is the simulations of the FetchAPI job.
 	fetchData = () => {
 		this.setState({
-			data: this.all[this.index].map(function (x) {
+			data: this.all.slice(this.index, this.index+this.size).map(function (x) {
 				x['PRICE'] = x['PRICE'].replace('$', '');
 				return x;
 			})
@@ -129,7 +120,7 @@ class Event extends React.Component {
 
 	changePage = (order) => {
 		if (order === "next") {
-			if (this.index + 1 < this.size) {
+			if (this.index + 6 < this.all.length) {
 				this.index += 1;
 				console.log(this.index);
 				this.fetchData();
