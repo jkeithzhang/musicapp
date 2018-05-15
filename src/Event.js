@@ -16,7 +16,8 @@ for (let i = 0; i < data.length; i++) {
 class Event extends React.Component {
 	constructor(props) {
 		super(props);
-		this.index = 1;
+		this.index = 0;
+		this.size = arr.length;
 		this.all = arr;
 		this.state = {
 			data: arr[0].map(function (x) {
@@ -36,8 +37,9 @@ class Event extends React.Component {
 		this.handleScroll = this.handleScroll.bind(this);
 		this.fetchArtist = this.fetchArtist.bind(this);
 		this.playTrack = this.playTrack.bind(this);
+		this.changePage = this.changePage.bind(this);
 	}
-
+	//this funciton is the simulations of the FetchAPI job.
 	fetchMoreData = () => {
 		this.setState({
 			data: this.state.data.concat(this.all[this.index]).map(function (x) {
@@ -47,16 +49,26 @@ class Event extends React.Component {
 		})
 		this.index = this.index + 1;
 	}
+	
+	//this funciton is the simulations of the FetchAPI job.
+	fetchData = () => {
+		this.setState({
+			data: this.all[this.index].map(function (x) {
+				x['PRICE'] = x['PRICE'].replace('$', '');
+				return x;
+			})
+		})
+	}
 
+	//this funciton is the simulations of the FetchAPI job.
 	playTrack = () => {
-		//this func is to simulate the API call.
 		const ava = [291, 292, 293, 199, 667, 278, 256, 226, 590, 148, 427, 742, 19, 778];
 		let pickRandom = ava[Math.floor(Math.random() * 10)];
 		this.setState({
 			trackId: pickRandom
 		})
 	}
-
+	
 	fetchArtist = (a) => {
 		const targetUrl = 'https://randomuser.me/api/?results=1'
 		fetch(targetUrl)
@@ -111,6 +123,21 @@ class Event extends React.Component {
 		}
 	}
 
+	changePage = (order) => {
+		if (order === "next") {
+			if (this.index + 1 < this.size) {
+				this.index += 1;
+				console.log(this.index);
+				this.fetchData();
+			}
+		} else {
+			if (this.index > 0) {
+				this.index -= 1;
+				this.fetchData();
+			}
+		}
+	}
+
 	render() {
 		var divStyle = {
 			padding: '5em 5em 5em 5em'
@@ -126,14 +153,15 @@ class Event extends React.Component {
 					<div className="headerItem col-md-2 col-sm-2 hidden-xs" onClick={() => this.sortBy('VENUE')}><b>VENUE</b> <i className="fas fa-angle-down"></i></div>
 					<div className="headerItem col-md-1 col-sm-1" onClick={() => this.sortBy('PRICE')}><b>PRICE</b> <i className="fas fa-angle-down"></i></div>
 				</div>
-				<div style={{
-					overflowY: 'auto',
-					height: 220
-				}}
-					onScroll={this.handleScroll}
-					ref={scroller => {
-						this.scroller = scroller;
+				<div
+					style={{
+						overflowY: 'auto',
+						height: 250
 					}}
+				// onScroll={this.handleScroll}
+				// ref={scroller => {
+				// 	this.scroller = scroller;
+				// }}
 				>
 					{
 						this.state.data.map(contact => {
@@ -147,6 +175,10 @@ class Event extends React.Component {
 							</div>
 						})
 					}
+				</div>
+				<div>
+					<span className="pageBtn" onClick={() => this.changePage("previous")}><i className="fas fa-caret-left"></i></span>
+					<span className="pageBtn" onClick={() => this.changePage("next")}><i className="fas fa-caret-right"></i></span>
 				</div>
 				<Modal data={this.state.artist} />
 			</div>

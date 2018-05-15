@@ -240,3 +240,16 @@ a:hover
 {
 	color: rgb(76, 85, 211);
 }
+
+.pageBtn
+{
+	margin: 10px;
+	color: #ff8a0e;
+	font-size: 1.5em;
+}
+
+.pageBtn:hover
+{
+	color: rgb(76, 85, 211);
+	cursor: pointer;
+}
