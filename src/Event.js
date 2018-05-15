@@ -27,7 +27,11 @@ class Event extends React.Component {
 			direction: {
 				PRICE: 'asc',
 				ARTIST: 'asc',
-				VENUE: 'asc'
+				VENUE: 'asc',
+				DATE: 'asc',
+				TIME: 'asc',
+				VENUE: 'asc',
+				PRICE: 'asc'
 			},
 			artist: {},
 			trackId: 226//default
@@ -146,12 +150,12 @@ class Event extends React.Component {
 			<div style={divStyle}>
 				<iframe width="100%" height="90" title="sc" scrolling="no" frameBorder="no" src={"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + this.state.trackId}></iframe>
 				<div className="eventTh row myThRow">
-					<div className="headerItem col-md-4 col-sm-4" onClick={() => this.sortBy('ARTIST')}><b>ARTIST</b> <i className="fas fa-angle-down"></i></div>
-					<div className="headerItem col-md-2 col-sm-2" onClick={() => this.sortBy('ARTIST')}><b>AUDITION</b> <i className="fas fa-angle-down"></i></div>
-					<div className="headerItem col-md-2 col-sm-2 hidden-xs" onClick={() => this.sortBy('DATE')}><b>DATE</b> <i className="fas fa-angle-down"></i></div>
-					<div className="headerItem col-md-1 col-sm-1 hidden-xs" onClick={() => this.sortBy('TIME')}><b>TIME</b> <i className="fas fa-angle-down"></i></div>
-					<div className="headerItem col-md-2 col-sm-2 hidden-xs" onClick={() => this.sortBy('VENUE')}><b>VENUE</b> <i className="fas fa-angle-down"></i></div>
-					<div className="headerItem col-md-1 col-sm-1" onClick={() => this.sortBy('PRICE')}><b>PRICE</b> <i className="fas fa-angle-down"></i></div>
+					<div className="headerItem col-md-4 col-sm-4" onClick={() => this.sortBy('ARTIST')}><b>ARTIST</b> <i className={this.state.direction.ARTIST === "asc" ? "fas fa-angle-down" : "fas fa-angle-up"}></i></div>
+					<div className="headerItem col-md-2 col-sm-2"><b>AUDITION</b></div>
+					<div className="headerItem col-md-2 col-sm-2 hidden-xs" onClick={() => this.sortBy('DATE')}><b>DATE</b> <i className={this.state.direction.DATE === "asc" ? "fas fa-angle-down" : "fas fa-angle-up"}></i></div>
+					<div className="headerItem col-md-1 col-sm-1 hidden-xs" onClick={() => this.sortBy('TIME')}><b>TIME</b> <i className={this.state.direction.TIME === "asc" ? "fas fa-angle-down" : "fas fa-angle-up"}></i></div>
+					<div className="headerItem col-md-2 col-sm-2 hidden-xs" onClick={() => this.sortBy('VENUE')}><b>VENUE</b> <i className={this.state.direction.VENUE === "asc" ? "fas fa-angle-down" : "fas fa-angle-up"}></i></div>
+					<div className="headerItem col-md-1 col-sm-1" onClick={() => this.sortBy('PRICE')}><b>PRICE</b> <i className={this.state.direction.PRICE === "asc" ? "fas fa-angle-down" : "fas fa-angle-up"}></i></div>
 				</div>
 				<div
 					style={{
